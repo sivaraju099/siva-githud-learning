@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+        <style>
+            #container {
+                background-color:coral;
+                border: 1px solid black;
+                font-family: sans-serif;
+                padding: 10px;
+                display: flex;
+                /* flex-direction:column-reverse;
+                height:250px ;
+                width: 50%;
+                flex-wrap: wrap; */
+                flex-direction: row;
+                height: 250px;
+                /* justify-content:space-around ; */
+                /* align-items:center; */
+                 
+            }
+
+            .item {
+                border: 1px solid black;
+                padding: 10px 40px;
+                background-color: cornflowerblue;
+            }
+            #item-1{
+                flex: 1;
+            }
+
+            #item-2{
+                flex: 5;
+            }
+            #item-3{
+                flex: 1;
+            }
+
+
+
+
+            /* #item-1{
+                flex-grow: 1;
+                flex-shrink:1; 
+                flex-basis: 0;  
+                flex: 2;
+            }
+            #item-2{
+                flex-grow: 4; 
+                 flex-shrink:3; 
+                flex-basis: 0;   
+                flex:4;
+            }
+            #item-3{
+                flex-grow: 1;   -> instood of this we can 
+                 flex-shrink: 1;       use only "flex:4" with specified value
+                flex-basis: 0;  
+                flex: 2;     
+            } */
+
+
+            /* #item-1{
+                align-self: flex-start;
+            }
+            #item-2{
+                align-self: flex-end;
+            }
+            #item-3{
+                align-self: stretch;
+            }  */
+          
+        </style> 
+    </head>
+    <body>
+        <div id="container">
+            <div id="item-1" class="item">
+                Item 1
+            </div>
+            <div id="item-2" class="item">
+                Item 2 
+            </div>
+            <div id="item-3" class="item">
+                Item 3 
+            </div>
+            <!-- <div id="item-4" class="item">
+                Item 4
+            </div> -->
+        </div>
+        
+    </body>
+</html>
